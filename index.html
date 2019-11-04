@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Jusda App Download</title>
 </head>
 <body>
-    <a href="itms-services://?action=download-manifest&url=https://liaoxuxin-linus.github.io/shareSpace/manifest.plist">downLoad</a>
+    <div class="bg" id="page">
+        <div class="btn_box">
+            <a href="itms-services://?action=download-manifest&url=https://liaoxuxin-linus.github.io/shareSpace/manifest.plist">IOS Download</a>
+            <a href="https://swapper.symbio.com/f/fe5414a7a0914323ac9c/?dl=1">Android Download</a>
+        </div>
+    </div>
 </body>
+<script type="text/javascript">
+    var screenWidth = window.innerWidth;
+    var screenHeight = window.innerHeight;
+    var page = document.getElementById("page");
+    page.style.width = screenWidth + 'px';
+    page.style.height = screenHeight + 'px';
+</script>
+    <style>
+        body{margin:0px;padding:0px;}
+        .bg{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: url(https://github.com/liaoxuxin-linus/shareSpace/blob/master/LaunchScreen_Bg.jpeg) no-repeat;
+        }
+        .btn_box{
+            width: 80%;
+            position:absolute;
+            left: 10%;
+            bottom: 25%;
+        }
+        .btn_box a {
+            width: 80%;
+            height:45px;
+            text-align: center;
+            line-height: 45px;
+            display: block;
+            border-radius: 5px;
+            margin:5px auto;
+            font-size: 14px;
+            color: #333;
+            background-color: #ffd148;
+        }
+    </style>
 </html>
