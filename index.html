@@ -35,7 +35,7 @@
             var html = '<div id="showTip" style="position:fixed;z-index:9;left:0px;top:0px;width:' + screenWidth + 'px;height:' + screenHeight + 'px">'
                             +'<p style="color:#fff;padding-top:50%;line-height:45px;font-size:14px;display:block;margin:0px auto;">点击右上角，在safari打开</p>'
                         +'</div>'
-            document.append(html);
+            document.body.append(html);
             var tip = document.getElementById("showTip");
             tip.onclick = function(){
                 this.type.display = "none";
