@@ -50,7 +50,7 @@
     }
     var ct = document.getElementById("iosControl");
     ct.onclick = function(){
-        if (ifSafari) {
+        if (!ifSafari) {
             var tipFunc = document.getElementById("showTip");
             tipFunc.style.display = "block";
             return;
