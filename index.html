@@ -15,11 +15,33 @@
     </div>
 </body>
 <script type="text/javascript">
+    //设置页面宽高
     var screenWidth = window.innerWidth;
     var screenHeight = window.innerHeight;
     var page = document.getElementById("page");
     page.style.width = screenWidth + 'px';
     page.style.height = screenHeight + 'px';
+    //判断是不是在iPhone的Safair浏览器打开的本页面
+    var ifSafari = false;
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf('applewebkit') > -1 && ua.indexOf('mobile') > -1 && ua.indexOf('safari') > -1 &&
+        ua.indexOf('linux') === -1 && ua.indexOf('android') === -1 && ua.indexOf('chrome') === -1 &&
+        ua.indexOf('ios') === -1 && ua.indexOf('browser') === -1) {
+        ifSafari = true;
+    }
+    else {
+        ifSafari = false;
+        setTimeout(() => {
+            var html = '<div id="showTip" style="position:fixed;z-index:9;left:0px;top:0px;width:' + screenWidth + 'px;height:' + screenHeight + 'px">'
+                            +'<p style="color:#fff;padding-top:50%;line-height:45px;font-size:14px;display:block;margin:0px auto;">点击右上角，在safari打开</p>'
+                        +'</div>'
+            document.append(html);
+            var tip = document.getElementById("showTip");
+            tip.onclick = function(){
+                this.type.display = "none";
+            }
+        },1000);
+    }
 </script>
     <style>
         body{margin:0px;padding:0px;}
