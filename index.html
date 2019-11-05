@@ -37,8 +37,9 @@
                         +'</div>'
             document.body.append(html);
             //var tip = document.getElementById("showTip");
-            var tip = function(this){
-                this.type.display = "none";
+            var tip = function(){
+                var _this = document.getElementById("showTip");
+                _this.type.display = "none";
             }
         },1000);
     }
