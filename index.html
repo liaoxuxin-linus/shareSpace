@@ -13,6 +13,7 @@
             <a href="https://swapper.symbio.com/f/fe5414a7a0914323ac9c/?dl=1">Android DOWNLOAD</a>
         </div>
     </div>
+    <div id="tip-box"></div>
 </body>
 <script type="text/javascript">
     //设置页面宽高
@@ -32,10 +33,11 @@
     else {
         ifSafari = false;
         setTimeout(() => {
+            var box = document.getElementById("tip-box");
             var html = '<div onclick="tip(this)" id="showTip" style="position:fixed;z-index:9;left:0px;top:0px;width:' + screenWidth + 'px;height:' + screenHeight + 'px">'
                             +'<p style="color:#fff;padding-top:50%;line-height:45px;font-size:14px;display:block;margin:0px auto;">点击右上角，在safari打开</p>'
                         +'</div>'
-            document.body.append(html);
+            box.innerHTML = html;
             //var tip = document.getElementById("showTip");
             var tip = function(){
                 var _this = document.getElementById("showTip");
