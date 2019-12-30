@@ -1,0 +1,13 @@
+{
+    "applinks":{
+        "apps":[
+
+        ],
+        "details":[
+            {
+                "paths":["*"],
+                "appID":"Z6P72RTH6G.com.jusda.cswap"
+            }
+        ]
+    }
+}
