@@ -11,10 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<!--<string>https://swapper.symbio.com/f/12b10562e95b4e5690ca/?dl=1</string>-->
-					<string>
-						https://i2sit.jusdaglobal.com/ideas_report/appFiles/driver_sit_domestic_2.1.ipa
-					</string>
+					<string>https://i2sit.jusdaglobal.com/ideas_report/appFiles/driver_sit_domestic_2.1.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
