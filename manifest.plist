@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="2.1" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
+<plist version="2.1">
 <dict>
 	<key>items</key>
 	<array>
@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://swapper.symbio.com/f/db1a54362a1e405fa10c/?dl=1</string>
+					<string>https://swapper.symbio.com/f/f170f38b493f4c719fd8/?dl=1</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -31,11 +31,11 @@
 				<key>bundle-identifier</key>
 				<string>com.jusda.patcher</string>
 				<key>bundle-version</key>
-				<string>1.0</string>
+				<string>2.1</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>Jusida</string>
+				<string>Jusda uat</string>
 			</dict>
 		</dict>
 	</array>
